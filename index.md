@@ -1,9 +1,16 @@
-# Lorena Zuzic
+<div class="sidebar">
+  <h1>Lorena Zuzic</h1>
+  <p>Assistant Professor<br>Department of Molecular Biology and Genetics<br>Aarhus University</p>
+  <p>lorena.zuzic@mbg.au.dk<br>
+     <a href="https://orcid.org/0000-0002-7834-612X">ORCID profile</a></p>
+</div>
 
-Assistant Professor, Department of Molecular Biology and Genetics, Aarhus University
-
-lorena.zuzic@mbg.au.dk · [ORCID](https://orcid.org/0000-0002-7834-612X)
-
+;# Lorena Zuzic
+;
+;Assistant Professor, Department of Molecular Biology and Genetics, Aarhus University
+;
+;lorena.zuzic@mbg.au.dk · [ORCID](https://orcid.org/0000-0002-7834-612X)
+;
 <img src="images/photo.png" alt="Lorena Zuzic"
      style="float:right; width:200px; margin:0 0 1em 1.5em; border-radius:4px;"
      onerror="this.style.display='none'">
