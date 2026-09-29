@@ -1,41 +1,79 @@
 ---
 ---
 
-@import "{{ site.theme }}";
+/* Custom styles: not importing the minimal theme's layout,
+   defining our own from scratch. */
 
-/* Widen the content column; the theme default is much narrower */
+/* ---------- Base typography ---------- */
+body {
+  font: 16px/1.6 -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+  color: #222;
+  background: #fff;
+  margin: 0;
+}
+
+h1, h2, h3 { margin-top: 1.5em; line-height: 1.3; }
+h1:first-child { margin-top: 0; }
+h2 { border-bottom: 1px solid #e8e8e8; padding-bottom: 4px; }
+a { color: #2c6e49; text-decoration: none; }
+a:hover { text-decoration: underline; }
+p, ul, ol { margin: 0 0 1em; }
+ul, ol { padding-left: 1.6em; }
+li { margin-bottom: 0.5em; }
+img { max-width: 100%; }
+blockquote { color: #555; border-left: 4px solid #e8e8e8; margin: 0 0 1em; padding-left: 1em; }
+code { background: #f4f4f4; padding: 1px 5px; border-radius: 3px; font-size: 0.9em; }
+
+/* ---------- Two-column layout ---------- */
 .wrapper {
+  display: grid;
+  grid-template-columns: 270px 1fr;   /* left column / text column */
+  gap: 2.5em;
   width: 1000px;
   max-width: 92%;
+  margin: 3em auto;
 }
 
-/* The right-floated content area: let it grow with the wrapper */
-section {
-  width: auto;       /* theme hardcodes a fixed narrow width */
-  max-width: none;   /* and a max-width; these cancel both */
-}
-
-/* Un-pin the theme's header: make it a normal block on top */
 header {
-  position: static;
-  float: none;
-  width: 100%;
-  clear: both;
-  padding-bottom: 1em;
-  margin-bottom: 2em;
-  border-bottom: 1px solid #e8e8e8;
+  grid-column: 1;
+  align-self: start;
 }
 
-/* Same for the footer (the theme pins it too) */
-footer {
-  position: static;
-  width: 100%;
-  clear: both;
-  margin-top: 4em;
-}
-
-/* Keep section from floating beside anything */
 section {
-  float: none;
-  clear: both;
+  grid-column: 2;
+  min-width: 0;          /* lets long words/links wrap instead of overflowing */
+}
+
+footer {
+  grid-column: 1 / -1;   /* footer spans the full width below both columns */
+  border-top: 1px solid #e8e8e8;
+  margin-top: 2em;
+  padding-top: 1.5em;
+  font-size: 0.85em;
+  color: #777;
+}
+
+/* Header contents: name prominent, description small */
+header h1 {
+  font-size: 1.5em;
+  margin-top: 0;
+}
+
+header h3, header p {
+  font-size: 0.9em;
+  color: #555;
+  font-weight: normal;
+}
+
+/* ---------- Phones: single column ---------- */
+@media (max-width: 700px) {
+  .wrapper {
+    grid-template-columns: 1fr;
+    width: 100%;
+    max-width: none;
+    padding: 0 16px;
+  }
+
+  header, section { grid-column: 1; }
+  footer { grid-column: 1; }
 }
