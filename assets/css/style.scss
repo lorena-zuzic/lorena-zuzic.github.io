@@ -3,6 +3,35 @@
 
 @import "{{ site.theme }}";
 
+/* Full-width layout: no narrow floated column */
 .wrapper {
-  max-width: 1000px;
+  width: 1000px;
+  max-width: 92%;
+}
+
+header, section, footer {
+  width: 100%;
+  float: none;
+}
+
+section {
+  margin-bottom: 3em;
+}
+
+/* Header becomes a normal block, not a 270px sidebar */
+header {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 1em;
+  margin-bottom: 2em;
+}
+
+/* Keep the photo reasonable when the column is wide */
+img[alt="Lorena Zuzic"] {
+  width: 220px;
+  height: auto;
+}
+
+/* Mobile: slight breathing room at the edges */
+@media (max-width: 600px) {
+  .wrapper { width: 100%; max-width: none; padding: 0 16px; }
 }
