@@ -4,26 +4,26 @@ Assistant Professor, Department of Molecular Biology and Genetics, Aarhus Univer
 
 lorena.zuzic@mbg.au.dk · [ORCID](https://orcid.org/0000-0002-7834-612X)
 
-<img src="images/photo.jpg" alt="Lorena Zuzic"
+<img src="images/photo.png" alt="Lorena Zuzic"
      style="float:right; width:200px; margin:0 0 1em 1.5em; border-radius:4px;"
      onerror="this.style.display='none'">
 
 ## About
 
 I am an assistant professor at the Department of Molecular Biology and Genetics,
-Aarhus University. My research uses molecular dynamics simulations to understand the dynamics of membrane proteins
-membrane proteins in their natural environments.
+Aarhus University. 
+My research uses molecular dynamics simulations to understand the dynamics of membrane proteins
+in their natural environments.
 
-My current focus is on **plant transporter proteins**, including sucrose and auxin transporters.
-In particular, I am focusing on the **pH dependency and proton-driven transport**: how
-binding site protonation and proton coupling determine substrate binding and the
-transport mechanism.
-I am also interested in the **lipid environments** of membrane proteins, and how the
-asymmetric and complex composition of native plant membranes influences protein structure
-and function.  
+My focus is on **plant membrane environments** and the effect of complex plant membranes
+affects the conformational landscape of membrane proteins.
 
-During my PhD I investigated viral envelopes, in particular pH-dependent conformational
-changes in flaviviruses and the SARS-CoV-2 spike protein.
+I am also interested in **plant transporter proteins**, including sucrose and auxin transporters.
+In that context, I am investigating the molecular basis of a **proton-driven transport** (how proton coupling 
+determines substrate binding and transport mechanism).
+
+During my PhD I investigated viral envelopes, in particular **pH-dependent conformational
+changes** in flaviviruses and the SARS-CoV-2 spike protein.
 
 ## Methods
 
@@ -33,7 +33,6 @@ changes in flaviviruses and the SARS-CoV-2 spike protein.
 - Constant-pH simulations
 - pKa predictions
 - Solvent-probe (benzene) mapping for cryptic pocket discovery
-- HPC workflows: LUMI, ASPIRE (Slurm, PBS)
 
 ## Experience
 
