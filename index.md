@@ -25,6 +25,14 @@ determines substrate binding and transport mechanism).
 During my PhD I investigated viral envelopes, in particular **pH-dependent conformational
 changes** in flaviviruses and the SARS-CoV-2 spike protein.
 
+## Experience
+
+- **Assistant Professor**, Aarhus University, Denmark (Oct 2025 – present)
+- **Postdoctoral Researcher**, Aarhus University, Denmark (Oct 2021 – Sep 2025)
+- **PhD in Chemistry**, University of Manchester, UK / A*STAR, Singapore
+  (Sep 2017 – Sep 2021). Thesis: "A simulation approach to cryptic pocket discovery
+  in viral envelopes."
+
 ## Methods
 
 - Unbiased atomistic and coarse-grained molecular dynamics simulations (GROMACS)
@@ -33,14 +41,6 @@ changes** in flaviviruses and the SARS-CoV-2 spike protein.
 - Constant-pH simulations
 - pKa predictions
 - Solvent-probe (benzene) mapping for cryptic pocket discovery
-
-## Experience
-
-- **Assistant Professor**, Aarhus University, Denmark (Oct 2025 – present)
-- **Postdoctoral Researcher**, Aarhus University, Denmark (Oct 2021 – Sep 2025)
-- **PhD in Chemistry**, University of Manchester, UK / A*STAR, Singapore
-  (Sep 2017 – Sep 2021). Thesis: "A simulation approach to cryptic pocket discovery
-  in viral envelopes."
 
 ## Publications
 
