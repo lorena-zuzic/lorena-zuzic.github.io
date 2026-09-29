@@ -1,1 +1,16 @@
+---
+---
 
+@import "{{ site.theme }}";
+
+/* Widen the content column; the theme default is much narrower */
+.wrapper {
+  width: 1000px;
+  max-width: 92%;
+}
+
+/* The right-floated content area: let it grow with the wrapper */
+section {
+  width: auto;       /* theme hardcodes a fixed narrow width */
+  max-width: none;   /* and a max-width; these cancel both */
+}
