@@ -14,3 +14,28 @@ section {
   width: auto;       /* theme hardcodes a fixed narrow width */
   max-width: none;   /* and a max-width; these cancel both */
 }
+
+/* Un-pin the theme's header: make it a normal block on top */
+header {
+  position: static;
+  float: none;
+  width: 100%;
+  clear: both;
+  padding-bottom: 1em;
+  margin-bottom: 2em;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+/* Same for the footer (the theme pins it too) */
+footer {
+  position: static;
+  width: 100%;
+  clear: both;
+  margin-top: 4em;
+}
+
+/* Keep section from floating beside anything */
+section {
+  float: none;
+  clear: both;
+}
