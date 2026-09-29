@@ -10,36 +10,66 @@
   margin: 3em auto;
 }
 
-/* Header: plain block on top, no absolute positioning, nothing floated */
-header {
-  width: 100%;
-  max-width: none;
-  float: none;
-  position: static;
-  overflow: hidden;          /* clears the floated photo if it's the theme logo */
-  text-align: left;
-  padding-bottom: 1em;
-  margin-bottom: 2em;
-  border-bottom: 1px solid #ddd;
-}
+/* Hide the theme's own header: our sidebar in index.md replaces it */
+header { display: none; }
 
-header h1 {
-  width: auto;
-  position: static;
-}
-
-/* Content: also a normal block, always below the header */
-section {
-  width: 100%;
-  max-width: none;
-  float: none;
-  clear: both;
-  position: static;
-}
-
+/* Footer: normal block at the bottom */
 footer {
-  position: static;          /* the theme fixes the footer to the viewport bottom */
+  position: static;
   width: 100%;
   clear: both;
   margin-top: 4em;
+  border-top: 1px solid #e8e8e8;
+  padding-top: 1.5em;
+}
+
+/* ============ The sidebar ============ */
+.sidebar {
+  float: left;
+  width: 250px;
+  margin-right: 2.5em;
+}
+
+.sidebar h1 {
+  font-size: 1.5em;
+  margin-top: 0;
+}
+
+.sidebar p {
+  font-size: 0.9em;
+  color: #555;
+  line-height: 1.5;
+  border-left: 3px solid #9fc2a5;
+  padding-left: 1em;
+}
+
+/* Main content: everything after the sidebar sits in the right column
+   and never wraps underneath it (overflow creates a new formatting context) */
+section > * {
+  overflow: hidden;
+}
+
+/* Keep the photo from towering over the narrower text column */
+img[alt="Lorena Zuzic"] {
+  width: 180px;
+  height: auto;
+}
+
+/* ============ Mobile ============ */
+@media (max-width: 700px) {
+  .wrapper {
+    width: 100%;
+    max-width: none;
+    padding: 0 16px;
+  }
+
+  .sidebar {
+    float: none;
+    width: 100%;
+    margin: 0 0 2em 0;
+  }
+
+  section > * {
+    overflow: visible;
+  }
 }
