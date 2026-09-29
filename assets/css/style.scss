@@ -3,35 +3,43 @@
 
 @import "{{ site.theme }}";
 
-/* Full-width layout: no narrow floated column */
+/* Page container */
 .wrapper {
   width: 1000px;
   max-width: 92%;
+  margin: 3em auto;
 }
 
-header, section, footer {
-  width: 100%;
-  float: none;
-}
-
-section {
-  margin-bottom: 3em;
-}
-
-/* Header becomes a normal block, not a 270px sidebar */
+/* Header: plain block on top, no absolute positioning, nothing floated */
 header {
-  border-bottom: 1px solid #ddd;
+  width: 100%;
+  max-width: none;
+  float: none;
+  position: static;
+  overflow: hidden;          /* clears the floated photo if it's the theme logo */
+  text-align: left;
   padding-bottom: 1em;
   margin-bottom: 2em;
+  border-bottom: 1px solid #ddd;
 }
 
-/* Keep the photo reasonable when the column is wide */
-img[alt="Lorena Zuzic"] {
-  width: 220px;
-  height: auto;
+header h1 {
+  width: auto;
+  position: static;
 }
 
-/* Mobile: slight breathing room at the edges */
-@media (max-width: 600px) {
-  .wrapper { width: 100%; max-width: none; padding: 0 16px; }
+/* Content: also a normal block, always below the header */
+section {
+  width: 100%;
+  max-width: none;
+  float: none;
+  clear: both;
+  position: static;
+}
+
+footer {
+  position: static;          /* the theme fixes the footer to the viewport bottom */
+  width: 100%;
+  clear: both;
+  margin-top: 4em;
 }
