@@ -4,6 +4,10 @@ Assistant Professor, Department of Molecular Biology and Genetics, Aarhus Univer
 
 [ORCID](https://orcid.org/0000-0002-7834-612X)
 
+<img src="images/photo.png" alt="Lorena Zuzic"
+     style="float:right; width:200px; margin:0 0 1em 1.5em; border-radius:4px;"
+     onerror="this.style.display='none'">
+     
 ## About
 
 I am an assistant professor at the Department of Molecular Biology and Genetics,
@@ -21,10 +25,7 @@ determines substrate binding and transport mechanism).
 During my PhD I investigated viral envelopes, in particular **pH-dependent conformational
 changes** in flaviviruses and the SARS-CoV-2 spike protein.
 
-<img src="images/photo.png" alt="Lorena Zuzic"
-     style="float:right; width:200px; margin:0 0 1em 1.5em; border-radius:4px;"
-     onerror="this.style.display='none'">
-     
+
 ## Experience
 
 - **Assistant Professor**, Aarhus University, Denmark (Oct 2025 – present)
